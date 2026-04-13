@@ -109,7 +109,9 @@ function Navbar({ cartCount }: { cartCount: number }) {
             <Link to="/" className="text-sm font-medium hover:text-zinc-500 transition-colors">
               Shop
             </Link>
-         
+          <Link to="/admin/login" className="text-sm font-medium hover:text-zinc-500 transition-colors flex items-center gap-1">
+              <User size={16} /> Admin
+            </Link>
             <Link to="/checkout" className="relative">
               <Button variant="ghost" size="icon">
                 <ShoppingCart size={20} />
